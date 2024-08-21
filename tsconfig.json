@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "include": ["src/**/*", "src/node_modules", "global.d.ts"],
+  "exclude": ["node_modules/*", "public/*"],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "ES6",
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  }
+}
