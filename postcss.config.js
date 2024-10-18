@@ -1,3 +1,8 @@
 module.exports = {
-  plugins: [require('precss'), require('tailwindcss'), require('autoprefixer')],
+  plugins: {
+    precss:{},
+    tailwindcss: {},
+    '@csstools/postcss-oklab-function': { 'preserve': true },
+    autoprefixer: {},
+},
 };

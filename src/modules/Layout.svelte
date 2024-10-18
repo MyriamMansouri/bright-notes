@@ -7,22 +7,18 @@
   function addCard() {
 		cards = [...cards, cards.length + 1];
 	}
-
-
 </script>
 
-<div class="min-h-screen bg-cyan-50 max-w-screen-lg mx-auto p-4">
+<div class="min-h-screen max-w-screen-lg mx-auto p-4">
   <div class="flex justify-end my-3">
-    <Button symbol="+" additionalClasses="align-top" on:click={addCard}/>
+    <Button symbol="+" on:click={addCard}/>
   </div>
- 
-{#each [...cards] as number, i}
-	<div>
-    <Card text={i + 1}/>
-	</div>
-{/each}
+
+  <div class="grid-cols-3 grid gap-10">
+    {#each [...cards] as number, i}
+        <Card text={i + 1}/>
+    {/each}
+  </div>
+
 </div>
-
-
-<!-- markup (zero or more HTML elements) goes here -->
 
