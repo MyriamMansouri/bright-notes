@@ -7,6 +7,10 @@
     "target": "ES6",
     "module": "ES2015",
     "moduleResolution": "node",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "/public/*": ["public/*"]
+    }
   }
 }
