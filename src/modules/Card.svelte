@@ -2,6 +2,7 @@
   import { randomOkLCHColor } from "../helpers/randomColor";
 
     export let text;
+
     let color1 = randomOkLCHColor();
     let color2 = randomOkLCHColor();
     console.log(color1,color2)
@@ -11,7 +12,7 @@
 <div class="bg-white font-bold text-white p-6 space-y-10 shadow-2xl rounded-2xl h-72 flex justify-center items-center text-8xl "
 style:background={textDecoration}
 >
- {text}
+  {text}
 </div>
 
 <style>
