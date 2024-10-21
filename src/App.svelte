@@ -3,7 +3,5 @@
 </script>
 
 <main>
-    <Layout />
+  <Layout />
 </main>
-
-

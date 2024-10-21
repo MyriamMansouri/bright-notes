@@ -11,12 +11,9 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    alias: {
-      svelte: path.resolve('node_modules', 'svelte/src/runtime'),
-    },
     extensions: ['.mjs', '.js', '.svelte', '.ts'],
-    mainFields: ['svelte', 'browser', '...'],
-    conditionNames: ['svelte', 'browser', '...'],
+    mainFields: ['svelte', 'browser', 'module', 'main'],
+    conditionNames: ['svelte', 'browser'],
   },
   module: {
     rules: [
@@ -35,16 +32,15 @@ module.exports = {
         use: 'svelte-loader',
       },
       {
+        test: /(?<!\.svelte)\.ts$/,
+        use: ['ts-loader'],
+      },
+      {
         // required to prevent errors from Svelte on Webpack 5+, omit on Webpack 4
         test: /node_modules\/svelte\/.*\.mjs$/,
         resolve: {
           fullySpecified: false,
         },
-      },
-      {
-        test: /\.ts?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
       },
       {
         test: /\.m?js$/,

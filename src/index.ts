@@ -1,11 +1,6 @@
 import App from './App.svelte';
 import './style.css';
+import { mount } from 'svelte';
 
-const app = new App({
-  target: document.body,
-  props: {
-    name: 'Myriam',
-  },
-});
-
+const app = mount(App, { target: document.body });
 export default app;
