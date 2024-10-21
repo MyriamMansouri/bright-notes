@@ -1,7 +1,7 @@
 <script lang="ts">
   import { randomOkLCHColor } from '../helpers/randomColor';
 
-  let { text } = $props();
+  let { text, x, y } = $props();
 
   let color1 = randomOkLCHColor();
   let color2 = randomOkLCHColor();
@@ -11,11 +11,9 @@
 </script>
 
 <div
-  class="bg-white font-bold text-white p-6 space-y-10 shadow-2xl rounded-2xl h-72 flex justify-center items-center text-8xl"
+  class="absolute bg-white top-[{x}px] left-{y} font-bold text-white p-6 space-y-10 shadow-2xl rounded-2xl h-72 flex justify-center items-center text-8xl"
+  style="top:{y}px; left:{x}px;"
   style:background={textDecoration}
 >
-  {text}
+  {text},{x},{y}
 </div>
-
-<style>
-</style>
