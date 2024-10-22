@@ -7,7 +7,7 @@
   }
 </script>
 
-<svelte:window on:click={addCard} />
+<svelte:window on:dblclick={addCard} />
 
 <main>
   <Layout {cards} />

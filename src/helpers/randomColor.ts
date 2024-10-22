@@ -2,8 +2,8 @@
  * From https://github.com/mrmrs/random-oklch-color
  */
 export function randomOkLCHColor(
-  minL = 40,
-  maxL = 70,
+  minL = 50,
+  maxL = 53,
   minC = 0,
   maxC = 132,
   minH = 0,
