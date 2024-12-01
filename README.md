@@ -6,7 +6,7 @@ This project was created to tinker a bit with (and in not particular order)
   
 https://bright-notes.netlify.app/
 
-Would be great to add new little features to make everithing more crisp:
+Would be great to add new little features to make everything more crisp:
 - Delete the notes
 - Better choice of cursor when hovering on the note
 - Ability to retrieve notes from local storage
