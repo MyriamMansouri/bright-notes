@@ -6,7 +6,7 @@
 </script>
 
 <div class="h-screen w-screen mx-auto p-4 relative">
-  <Title>Click anywhere to create a new note</Title>
+  <Title>Double-click anywhere to create a new note</Title>
   <div id="card-layout">
     {#each cards as card}
       <Card text={cards.length} x={card.x} y={card.y} />
